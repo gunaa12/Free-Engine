@@ -13,5 +13,4 @@ function changeScreen(screen) {
         document.getElementById('Home').style.display = 'none';
         document.getElementById('Recommend').style.display = 'block';
     }
-    $('html, body').animate({ scrollTop: 0 }, 'fast');
 }

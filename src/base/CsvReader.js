@@ -1,24 +1,26 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
+import raw from './data.csv';
 
 export default function CsvReader(){
-    const [csvFile, setCsvFile] = useState();
+    const [csvData, setCsvData] = useState(undefined);
+    const csvFile = './data.csv';
 
+    useEffect( () => {
+        fetch(raw)
+        .then(r => r.text())
+        .then(text => {
+            console.log('text encoded:', text);
+            setCsvData(text);
+        })
+    })
+    
     return(
-        <form id='csv-form'>
-            <input
-                type='file'
-                accept='.csv'
-                id='csvFile'
-                onChange={(e) => {
-                    setCsvFile(e.target.files[0])
-                }}
-            >
-            </input>
-            <br/>
-            <button>
-                Submit
-            </button>
-        </form>
+        <div>
+            <div className="gcse-search"/>
+            {csvData ? csvData: ''}
+            <p>Hello</p>
+        </div>
     );
 
 }
