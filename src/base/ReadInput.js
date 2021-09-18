@@ -1,26 +1,32 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useEffect } from 'react';
 import raw from './data.csv';
 
-export default function CsvReader(){
+let data_points;
+
+function ReadInput(){
     const [csvData, setCsvData] = useState(undefined);
-    const csvFile = './data.csv';
 
     useEffect( () => {
         fetch(raw)
         .then(r => r.text())
         .then(text => {
-            console.log('text encoded:', text);
+            const lines = text.split("\n");
+            for (let line_num = 1; line_num < lines.length; line_num++) {
+                let temp = lines[line_num].split(",");
+                   
+            }
             setCsvData(text);
         })
     })
-    
+
     return(
         <div>
             <div className="gcse-search"/>
             {csvData ? csvData: ''}
-            <p>Hello</p>
         </div>
     );
 
 }
+
+export default ReadInput;

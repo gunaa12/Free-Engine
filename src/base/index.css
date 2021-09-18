@@ -8,3 +8,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 /* section end */
+
+.iframe {
+  height:65em;
+  width:85em;
+  border:none;
+  border-radius: 1.5em;
+  margin: auto;
+  border: .2em solid;
+}
+
+.iframeContainer {
+  text-align: center;
+}

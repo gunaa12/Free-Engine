@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './base/index.css';
 import Home from './base/Home';
 import reportWebVitals from './reportWebVitals';
-import Recommend from './base/Recommend';
+import Suggestions from './base/Suggestions';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -14,9 +14,9 @@ ReactDOM.render(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Recommend />
+    <Suggestions />
   </React.StrictMode>,
-  document.getElementById('Recommend')
+  document.getElementById('Suggestions')
 );
 
 reportWebVitals();

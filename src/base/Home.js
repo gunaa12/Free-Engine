@@ -1,12 +1,12 @@
 import './index.css';
-import CsvReader from './CsvReader'
+import ReadInput from './ReadInput';
 
 function Home() {
   return (
     <div id = "home">
       <div className="App">
         <header className="App-header">
-          <CsvReader />
+          <ReadInput />
         </header>
       </div>
     </div>

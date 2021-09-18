@@ -7,10 +7,13 @@ window.onload = function() {
 function changeScreen(screen) {
     if (screen == 1) {
         document.getElementById('Home').style.display = 'block';
-        document.getElementById('Recommend').style.display = 'none';
+        document.getElementById('Suggestions').style.display = 'none';
     }
     else if (screen == 2) {
         document.getElementById('Home').style.display = 'none';
-        document.getElementById('Recommend').style.display = 'block';
+        document.getElementById('Suggestions').style.display = 'block';
+    }
+    else if(screen == 3){
+        document.getElementById('').style.display ='block';
     }
 }
