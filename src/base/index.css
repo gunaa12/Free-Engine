@@ -25,11 +25,14 @@ body {
 
 /* app styling */
 .app {
-	width: 44vh;
+	width: 64.2vh;
 	height: 67.5vh;
 	float: left;
 	text-align: center;
-	padding: auto;
+  padding: auto;
+  margin-top: .8vh;
+  margin-left: .5vh;
+  margin-right: .5vh;
 	border-radius: 5vh;
 }
 
@@ -38,12 +41,28 @@ body {
 }
 
 .appOutline {
-	background-color: rgb(231, 231, 231);
-	width: 45vh;
+	background-color: rgb(241, 241, 241);
+	width: 64.2vh;
 	height: 55vh;
 	float: left;
 	text-align: center;
 	padding: auto;
-	margin: 2.5vh;
+	margin: 3vh;
 	border-radius: 3vh;
+}
+
+/* search bar */
+#searchBar {
+  width: 85%;
+  padding-left: 7.5%;
+}
+
+/* apps styling */
+.description, .alternative {
+  font-size: large;
+  color: #37515F;
+}
+
+.appImg {
+  width: 35vh;
 }

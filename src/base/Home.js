@@ -4,7 +4,9 @@ import ReadInput from './ReadInput';
 function Home() {
   return (
     <div id = "home">
-      <div className="gcse-search"/>
+      <div id = "searchBar">
+        <div className="gcse-search"/>
+      </div>
       <ReadInput />
     </div>
   );

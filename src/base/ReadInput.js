@@ -1,6 +1,5 @@
 import raw from './data.txt';
 import App from './App';
-import { render } from '@testing-library/react';
 import {Component} from 'react';
 
 export default class ReadInput extends Component {
@@ -39,7 +38,7 @@ export default class ReadInput extends Component {
                         this.state.tokens.map((words) => {
                             return (
                                 <div className = "appOutline">
-                                    <App name = {words[0]} description = {words[1]} alternative = {words[2]}/>
+                                    <App name = {words[0]} description = {words[1]} alternative = {words[2]} link = {words[3]} image = {words[4]}/>
                                 </div>
                             );
                         })

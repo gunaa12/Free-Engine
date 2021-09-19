@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en"> 
+  <header>
+    <link rel="shortcut icon" href="./images/icon.png">
+  </header>  
   <body>
     <head>
       <meta charset="utf-8" />
-      <meta name="theme-color" content="#000000" />
+      <meta name="theme-color" content="Free Engine" />
       <meta name="description" content="Alternative resources to paid professional tools for learning purposes."/>
 
-      <link rel="stylesheet" href="../css/font-awesome.css">
       <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
       <link href="./css/style.css" rel="stylesheet" type="text/css">
-      <link href="./css/responsive.css" rel="stylesheet" type="text/css">
-      <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css">
-      <link href="./css/animate.css" rel="stylesheet" type="text/css">
 
       <script src="./logic.js"></script>
       <script src="./search.js"></script>
@@ -21,10 +20,11 @@
 
     <nav class="main-nav-outer" id="nav">
       <div class="container">
-        <ul class="main-nav">
+        <ul class="main-nav" style = "text-align: right;">
+          <li style = "float: left;"><img id = "titleIcon" src = "./images/icon.png"/></li>
+          <li style = "float: left;"><p id = "title" onclick = "changeScreen('1')">rEngine</p></li> 
           <li><a onclick = "changeScreen('1')">Home</a></li> 
           <li><a onclick = "changeScreen('2')">Suggestions</a></li>
-          <li><a onclick="changeScreen('3')">Recommendation</a></li>
         </ul>
         <a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
       </div>

@@ -1,5 +1,16 @@
 /* CSS Document */
 
+#title {
+	color: #FF570A;
+	margin-top: 2vh;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#titleIcon {
+	width: 6.5vh;
+}
+
 /* Float Elements 
 ---------------------------------*/
 .fl-lt {float:left;}
@@ -231,7 +242,14 @@ color: #fff;
 
 .main-nav li a:hover{ 
 	text-decoration:none;
-	color: #7cc576;
+	color: #9c7917;
+	cursor: pointer;
+}
+
+.main-nav li h1{ 
+	text-decoration:none;
+	color: #9c7917;
+	cursor: pointer;
 }
 
 .small-logo{ 
@@ -368,7 +386,7 @@ color: #fff;
 	-webkit-transition:all 0.3s ease-in-out;
 }
 .Portfolio-nav li a:hover{
-	background:#7cc576;
+	background:#000000;
 	color:#fff;
 	text-decoration:none;
 }
@@ -399,7 +417,7 @@ color: #fff;
 }
 
 .Portfolio-nav li a.current{
-	background:#7cc576;
+	background:#000000;
 	color:#fff;
 	text-decoration:none;
 }
