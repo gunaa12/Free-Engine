@@ -8,7 +8,7 @@ let data_points;
 function ReadInput(){
     const [csvData, setCsvData] = useState(undefined);
 
-    const [tokens, setToken] = useState()
+    const [tokens, setToken] = useState([])
 
 
     useEffect( () => {
@@ -17,8 +17,9 @@ function ReadInput(){
         .then(text => {
             const lines = text.split("\n");
             lines.map((line, index) => {
-                let tokens = line.split(",");
-               setToken(tokens)
+                let newtokens = line.split(",");
+                console.log(tokens);
+               setToken([...tokens, newtokens])
             })
         }) 
     },[])
@@ -27,7 +28,7 @@ function ReadInput(){
         <div>
             <div className="gcse-search"/>
             {
-                tokens.map((token) => {
+                tokens && tokens.map((tokens) => {
                     return(
                         <App name = {tokens}/>
                     );
@@ -38,16 +39,16 @@ function ReadInput(){
     );
 }
 
-function renderApps() {
-    fetch(raw).then(r => r.text())
-    .then(text => {
-        text.split("\n").map(({line}) => {
-        console.log(typeof(line));
-        console.log(line);
-        const tokens = line.split(",");
-            <App name = {tokens[0]}/>
-        });
-    })
-}
+// function renderApps() {
+//     fetch(raw).then(r => r.text())
+//     .then(text => {
+//         text.split("\n").map(({line}) => {
+//         console.log(typeof(line));
+//         console.log(line);
+//         const tokens = line.split(",");
+//             <App name = {tokens[0]}/>
+//         });
+//     })
+// }
 
 export default ReadInput;
