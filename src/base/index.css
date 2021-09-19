@@ -21,3 +21,7 @@ body {
 .iframeContainer {
   text-align: center;
 }
+
+.app {
+  background-color: aliceblue;
+}

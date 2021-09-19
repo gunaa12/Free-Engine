@@ -17,3 +17,28 @@ function changeScreen(screen) {
         document.getElementById('').style.display ='block';
     }
 }
+function StandaloneToggleButton() {
+    const [selected, setSelected] = React.useState(false);
+  
+    return (
+      <ToggleButton
+        value="check"
+        selected={selected}
+        onChange={() => {
+            if (selected){
+              console.log("Value of Button",selected);
+              <script src="./search.js"></script>
+            }
+            else{
+              console.log("Value of Button",selected);
+              <script src="./searchDark.js"></script>
+            }
+           
+          setSelected(!selected);
+        }}
+      >
+        <CheckIcon />
+      </ToggleButton>
+    );
+  }
+    
