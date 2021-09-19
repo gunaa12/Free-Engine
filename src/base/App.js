@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         return (
             <div className = "app">
-                <p>{this.props.name}</p>
+                <p>{this.props.name} -- {this.props.decsription} -- {this.props.alternative}</p>
             </div>
         );
     }
