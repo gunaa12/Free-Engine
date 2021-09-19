@@ -11,17 +11,39 @@ body {
 
 .iframe {
   height:65em;
-  width:85em;
+  width:94em;
   border:none;
-  border-radius: 1.5em;
+  border-radius: 1.2em;
   margin: auto;
-  border: .2em solid;
+  border: .1em solid;
 }
 
 .iframeContainer {
   text-align: center;
+  padding: 5em;
 }
 
+/* app styling */
 .app {
-  background-color: aliceblue;
+	width: 44vh;
+	height: 67.5vh;
+	float: left;
+	text-align: center;
+	padding: auto;
+	border-radius: 5vh;
+}
+
+#home {
+  text-align: center;
+}
+
+.appOutline {
+	background-color: rgb(231, 231, 231);
+	width: 45vh;
+	height: 55vh;
+	float: left;
+	text-align: center;
+	padding: auto;
+	margin: 2.5vh;
+	border-radius: 3vh;
 }

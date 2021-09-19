@@ -8,8 +8,10 @@ import React, {Component} from 'react';
 class App extends Component {
     render() {
         return (
-            <div className = "app">
-                <p>{this.props.name} -- {this.props.decsription} -- {this.props.alternative}</p>
+            <div class = "app">
+                <h2>{this.props.name}</h2>
+                <p>Description: {this.props.description}</p>
+                <p>Alternative: {this.props.alternative}</p>
             </div>
         );
     }

@@ -4,11 +4,8 @@ import ReadInput from './ReadInput';
 function Home() {
   return (
     <div id = "home">
-      <div className="App">
-        <header className="App-header">
-          <ReadInput />
-        </header>
-      </div>
+      <div className="gcse-search"/>
+      <ReadInput />
     </div>
   );
 }
